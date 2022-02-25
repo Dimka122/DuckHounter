@@ -52,10 +52,10 @@ namespace Duck_Hunt
             this.Text = "Duck Hunt";
             this.ResumeLayout(false);
 
-            duck_position.X = 350;
+            /*duck_position.X = 350;
             duck_position.Y = 350;
             duck_position.Width = 50;
-            duck_position.Height = 50;
+            duck_position.Height = 50;*/
 
             this.DoubleBuffered = true;
             this.Paint += Form1_Paint;
