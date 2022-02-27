@@ -57,7 +57,7 @@ namespace Duck_Hunt
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Duck Hunt";
@@ -109,13 +109,13 @@ namespace Duck_Hunt
             e.Graphics.DrawLine(pen, elipse_location.X + 10, elipse_location.Y + 20, elipse_location.X - 20, elipse_location.Y + 20);
             e.Graphics.DrawLine(pen, elipse_location.X + 20, elipse_location.Y + 30, elipse_location.X + 20, elipse_location.Y + 60);
             e.Graphics.DrawLine(pen, elipse_location.X + 20, elipse_location.Y + 10, elipse_location.X + 20, elipse_location.Y - 20);
-            e.Graphics.DrawEllipse(Pens.Red,
+            e.Graphics.DrawEllipse(Pens.Black,
                 elipse_location.X, elipse_location.Y, 40, 40);
 
             foreach (Point point in cord_point)
             {
                 //this.check.Text = point.X.ToString();
-                e.Graphics.FillEllipse(Brushes.Red,
+                e.Graphics.FillEllipse(Brushes.Black,
                 point.X, point.Y, 20, 20);
                 shut_position.X = point.X;
                 shut_position.Y = point.Y;
