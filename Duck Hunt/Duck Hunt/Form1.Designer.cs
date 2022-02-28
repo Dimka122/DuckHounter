@@ -102,7 +102,7 @@ namespace Duck_Hunt
             e.Graphics.Flush();
             GC.Collect();
             DrawImage2FloatRectF(e);
-            Pen pen = new Pen(Color.Red);
+            Pen pen = new Pen(Color.Red,5);
             
 
             e.Graphics.DrawLine(pen, elipse_location.X + 30, elipse_location.Y + 20, elipse_location.X + 60, elipse_location.Y + 20);
